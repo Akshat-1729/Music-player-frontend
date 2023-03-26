@@ -1,0 +1,724 @@
+body{
+    background-color: rgb(23, 4, 37);
+    margin: 0px;
+    overflow-y: hidden;
+    
+}
+header{
+    overflow-y: auto;
+}
+.navigation{
+    display: inline-block;
+    margin-left: 7px;
+}
+.navigation img{
+    height: 59px;
+    width: 59px;
+    border-radius: 50%;
+}
+#web-name{
+    margin-left: 15px;
+    vertical-align:top;
+    position: relative;
+    top: 10px;
+    color: aliceblue;
+}
+#ak{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 2;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+#studio{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 2px;
+}
+#favourite-nav a{
+    text-decoration: none;
+    color: azure;
+    position: relative;
+    bottom: 25px;
+    vertical-align: top;
+    margin-left: 100px;   
+    font-family:Arial, Helvetica, sans-serif; 
+    letter-spacing: 0.9px;
+    font-weight: 200;
+}
+#search-nav{
+    position: relative;
+    bottom: 25px;
+    margin-left: 420px;
+}
+#text{
+    border-radius: 15px;
+    width: 240px;
+    background-color:rgb(38, 7, 62);
+    border:1.9px solid rgb(230, 202, 238) ;
+    caret-color: white;
+    padding-left: 25px;
+    outline: none;
+    color: white;
+    height: 18px;
+}
+#text:focus::placeholder{
+    color: transparent;
+}
+#text::placeholder{
+    color: rgba(158, 138, 169, 0.647);
+    padding-left: 6px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+#search-icon{
+    color: rgb(245, 229, 220);
+    position: relative;
+    right: 270px;
+    top:1.8px;
+}
+#mic-icon{
+    color: rgb(245, 229, 220);
+    position: relative;
+    right:47px;
+    top: 1.7px;
+}
+#notification{
+    position: relative;
+    bottom: 25px;
+}
+#notification a{
+    color: antiquewhite;
+    margin-left: 18px;
+    font-size: larger;
+}
+#profile-pic{
+    margin-left: 40px;
+    border-radius: 50%;
+    height: 45px;
+    width: 40px;
+}
+#profile-pic img{
+    margin-top: 2px;
+    box-shadow:  0px 0px 9px 3.7px rgba(239, 21, 115, 0.694);
+    
+}
+/* total width of main */
+main{
+    width: 70%;
+    display: inline-block;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height:550px;
+}
+/* for the 3 playlists */
+#playlist{
+    display: inline-block;
+    width: 100%;
+}
+.playlist-covers{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: 70px;
+    margin-left: -38px;
+    
+    
+    
+    
+}
+.covers a img{
+    height: 250px;
+    width: 240px;
+    padding: 0px 8px;
+    transition: 0.2s ease-in-out;
+}
+.covers a img:hover{
+    transform: scale(1.16);
+    
+}
+
+/* the aside section */
+aside{
+    display: inline-block;
+    width: 29.6%;
+    vertical-align: top;
+    margin-top: 15px;
+    margin-left: -70px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height:500px;
+    
+}
+
+.aside-queue h2{
+    color: azure;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#heading-queue{
+    display: inline-block;
+}
+#filter{
+    display: inline-block;
+    margin-left: 190px;
+}
+#queue-filter{
+    background: none;
+    color: aqua;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    border-radius: 15px;
+    width: 70px;
+}
+#queue-filter:focus{
+    outline: none;
+    background-color:  rgb(35, 7, 55);
+    outline: none;
+}
+.song-poster img{
+    height: 47px;
+    width: 47px;
+    margin-left: 7px;
+    margin-right: 17px;
+    box-shadow: 0px 0px 6px 3px rgba(241, 243, 175, 0.594);
+}
+.songs-in-queue{
+    display: inline-block;
+    padding-bottom: 0px;
+    
+}
+.index{
+    position: relative;
+    color: rgb(200, 170, 150);
+    bottom: 19px;
+    font-size: 15px;
+    font-weight: 500;    
+}
+
+.song-name-queue{
+    color: azure;
+    position: relative;
+    top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.artist-name-queue{
+    color: rgb(174, 174, 174);
+    position: relative;
+    bottom: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: lighter;
+}
+
+/* for the favourite heart sign */
+.heart{
+    display: inline-block;
+    position: relative;
+    bottom: 21px;
+    margin-right: 0px;
+}
+.heart a{
+    color: rgb(133, 13, 188);
+}
+
+/* to hide scrollbar */
+::-webkit-scrollbar {
+    width: 0px;
+    
+}
+.song-details{
+    display: inline-block;
+    height: 55px;
+    width: 256.1px;
+}
+/* latest release songs */
+.section-heading{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(240, 240, 229);
+    margin-left: 28px;
+    margin-top: 40px;
+}
+.latest-release-songs{
+    width: 77%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 28px;
+}
+.song-posters-latest{
+    display: inline-block;
+    height: 60px;
+    width: 64px;
+}
+.latest-details{
+    display: inline-block;
+    width: 150px;
+    margin-left: 13px;
+    color: aliceblue;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 49px;
+}
+.song-posters-latest img{
+    height: 60px;
+    width: 64px;
+}
+.latest-song-name{
+    position: relative;
+    top: 3px;
+}
+.release-date{
+    position: relative;
+    bottom: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(174, 174, 174);
+    
+}
+.latest-options{
+    display: inline-block;
+    position: relative;
+    bottom: 22px;
+    color: rgb(231, 235, 243);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.latest-options a i{
+    color: rgb(188, 106, 199);
+}
+.latest-options p{
+    font-size: 14px;
+    position: relative;
+    bottom: 9px;
+    font-size: 12px;
+
+}
+/* artists section */
+.artists{
+    width: 77%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 28px;
+    margin-bottom: 13px;
+    
+}
+.artist-covers img{
+    height: 89px;
+    width: 89px;
+    padding: 12px;
+    border-radius: 50%;
+    
+}
+.podcasts{
+    width: 77%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 28px;
+    margin-bottom: 13px;   
+}
+@keyframes shake{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(15deg);
+    }
+    75%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.podcast-cover img{
+    height: 200px;
+    width: 180px;
+    padding: 7px;
+    margin: 15px;
+    transition: 0.2s ease-in-out;
+}
+.podcast-cover img:hover{
+    transform: scale(1.1);
+    animation: shake 0.4s 1 alternate ease-in-out;
+}
+
+/* the music player in the bottom */
+
+.a-p{
+    height: 0px;
+    width: 0%;
+    position:fixed;
+    overflow: hidden;
+    margin-top: -83.3px;
+    
+    
+}
+.a-p:target{
+    height: 62px;
+    width: 701px;
+    border-radius: 13px;
+    margin-left: 279px;
+}
+
+/* editinng the audio player */
+audio{
+    margin-left: 0px;
+    height: 70px;
+    width: 700px;
+    transform: scale(0.8);
+    transition: ease-in-out 0.4s;
+    margin-top: -15px;
+    outline: none;
+}
+audio:hover{
+    transform: scale(1);
+    margin-top: -8.3px;
+}
+.current-song{
+    height: 0px;
+    width: 0px;
+    background-image: linear-gradient(45deg,rgb(50, 193, 233),rgb(42, 244, 180));
+    position: fixed;
+    transition: 0.4s ease-in-out;
+    margin-top: -15px;
+    left: 480px;
+    
+    
+}
+.current-song img{
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    transition: 0.4s ease-in-out;
+    bottom: 17px;
+    left: 127px;
+    
+}
+.a-p:hover .current-song img{
+    height: 110px;
+    width: 100px;
+    box-shadow: 0px 0px 10px 5px rgb(225, 174, 227);
+
+    border-radius: 48%;
+}
+.a-p:hover .current-song{
+    height: 81px;
+    width: 340px;
+    border-radius: 40%;
+}
+
+
+/* designing the audio player */
+audio::-webkit-media-controls-panel{
+    background-image: linear-gradient(90deg,rgb(36, 182, 201),rgb(166, 0, 255));
+}
+audio::-webkit-media-controls-timeline {
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+audio::-webkit-media-controls-current-time-display{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+audio::-webkit-media-controls-time-remaining-display{
+    color: rgb(43, 8, 8);
+    font-weight: bold;
+}
+audio::-webkit-media-controls-play-button{
+    background-color: rgba(229, 233, 247, 0.623);
+    border-radius: 50%;
+}
+audio::-webkit-media-controls-play-button:hover{
+    background-color:rgba(249, 255, 255, 0.669);
+    border-radius: 50%;
+}
+audio::-webkit-media-controls-mute-button{
+    border-radius: 50%;
+    background-color: rgba(203, 158, 244, 0.788);
+}
+audio::-webkit-media-controls-volume-slider {
+    background-color: rgba(221, 201, 241, 0.788);
+    border-radius: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.artist-song-list{
+    height: 189px;
+    width: 747px;
+    padding: 5px;
+    overflow-y: auto;
+}
+.artist-song-list-cover{
+    height: 50px;
+    width: 50px;
+}
+/* artist seperate page */
+#arjit-page{
+    height: 0px;
+    width: 0%;
+    position:fixed;
+    overflow: hidden;
+    margin-top: -554px;
+    transition: 0.1s ease-in-out;
+}
+#arjit-page:target{
+    height: 532px;
+    width:1272px;
+    background-color: rgb(23, 4, 37);
+}
+/* atif seperate page */
+#atif-page{
+    height: 0px;
+    width: 0%;
+    position:fixed;
+    overflow: hidden;
+    margin-top: -554px;
+    transition: 0.1s ease-in-out;
+}
+#atif-page:target{
+    height: 532px;
+    width:1272px;
+    background-color: rgb(23, 4, 37);
+}
+#shreya-page{
+    height: 0px;
+    width: 0%;
+    position:fixed;
+    overflow: hidden;
+    margin-top: -554px;
+    transition: 0.1s ease-in-out;
+}
+#shreya-page:target{
+    height: 532px;
+    width:1272px;
+    background-color: rgb(23, 4, 37);
+}
+.abt{
+    margin-top: 35px;
+    margin-left: 55px;
+    height: 300px;
+    width: 750px;
+    background-color: rgb(58, 22, 83);
+    transition: 0.1s ease-in-out;
+    border-radius: 7px;
+}
+
+/* for block inline */
+.i-b{
+    display:inline-block ;
+}
+.about-pic img{
+    height: 300px;
+    width: 260px;
+    margin-right: 25px;
+    border-radius: 7px;
+}
+.about-name{
+    position: absolute;
+    vertical-align: middle;
+    
+    top: 10%;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    letter-spacing: 2px;
+}
+.about-name h2{
+    width: 300px;
+}
+.followers{
+    font-size: x-small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 0px;
+    font-weight: 500;
+    margin-left: 30px;
+}
+.about-desc{
+    
+    width: 450px;
+    position: relative;
+    vertical-align: bottom;
+    margin-bottom: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color:rgb(196, 190, 190);
+}
+
+.button{
+    display: inline-block;
+    color: aliceblue;
+    background-image:linear-gradient(90deg,rgb(110, 0, 228) ,rgb(233, 7, 206) );
+    width: 90px;
+    font-weight: bolder;
+    letter-spacing: 1.3px;
+    height: 35px;
+    border: none;
+    margin-top: 20px;
+}
+.button:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 8px 3px rgb(254, 255, 255);
+    border-radius: 2px;
+}
+.follow a{
+    text-decoration: none;
+    color: aliceblue;
+    margin-left: 90px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 550;
+}
+.tracks{
+    color: rgb(241, 233, 233);
+    font-size: small;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+}
+/* similar artists list */
+.similar-artist{
+    height: 270px;
+    width: 457px;
+    position: absolute;
+    margin-left: 20px;
+}
+.similar-artist-heading{
+    color: azure;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 17px;
+}
+.similar-artist-heading a{
+    text-decoration: none;
+    margin-left: 160px;
+    color:floralwhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+.similar-artist-cover img{
+    height: 75px;
+    width: 72px;
+    box-shadow: 0px 0px 7px 3px whitesmoke;
+}
+.similar-artist-detail{
+    margin-left: 30px;
+    width: 90px;
+}
+.similar-artist-detail h4{
+    color:aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    bottom: 11px;
+}
+.similar-artist-detail p{
+    color: rgb(196, 190, 190);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    bottom: 25px;
+    font-size: small;
+}
+.similar-artist-follower{
+    color: rgb(205, 182, 232);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller;
+    position: relative;
+    letter-spacing: 1px;
+    bottom: 40px;
+    margin-left: 57px;
+}
+
+/* the playlist section */
+/* to hide playlist */
+#happy{
+    height: 0px;
+    width: 0%;
+    position:fixed;
+    overflow: hidden;
+    margin-top: -554px;
+    transition: 0.1s ease-in-out;
+    
+}
+.head{
+    margin-top: 10px;
+    margin-left: 17px;
+    
+    width: 72%;
+}
+#happy:target{
+    height: 532px;
+    width:1272px;
+    background-color: rgb(23, 4, 37);
+}
+.head-cover img{
+    height: 250px;
+    width: 260px;
+    box-shadow: 0px 0px 9px 4px rgb(240, 192, 255);
+}
+.head-heading{
+    margin-left: 30px;
+}
+.head-heading h1{
+    color: rgb(187, 92, 242);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 4px;
+    font-weight:900;
+    font-size:45px;
+    position: relative;
+    bottom: 50px;
+}
+.head-heading h3{
+    color: rgb(241, 127, 184);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    bottom: 30px;
+    letter-spacing: 3px;
+}
+.head-heading h4{
+    color: rgb(190, 190, 186);
+    margin-left: 57px;
+    position: relative;
+    bottom: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+.happy-songs-box{
+    height: 240px;
+    
+    width: 60%;
+    padding-top: 10px;
+    padding-left: 70px;
+    overflow-y: auto;
+}
+.suggested-playlist{
+    position: absolute;
+    height: 528px;
+    width: 27%;
+    margin: 0%;
+    padding: 0%;
+    overflow-y: auto;
+    
+    
+}
+.suggested-playlist h2{
+    color: rgb(142, 246, 149);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+.similar-playlist-cover img{
+    height: 140px;
+    width: 130px;
+    transition: 0.1s ease-in-out;
+    box-shadow: 0px 0px 16px 4px rgb(230, 255, 3);
+    margin-bottom: 25px;
+}
+.similar-playlist-cover img:hover{
+    transform: scale(1.12);
+}
+.similar-playlist-cover{
+    padding-left: 90px;
+}
+
